@@ -1,0 +1,89 @@
+
+h1{
+	background-color: silver;
+	text-align: center;
+	font-family: algerian;
+	font-size: 72px;
+
+}
+h2{
+	background-color: silver;
+	text-align: center;
+	font-family: bauhaus-93;
+	font-size: 60px;
+	color: blue;
+
+}
+h1,h2,h3{
+	margin:0;
+}
+h3{
+
+	text-align: left;
+	font-family: bauhaus-93;
+	color: blue;
+
+
+
+}
+body{
+	background-color: grey;
+	background-image: url("photo1.JPG");
+	font-family: bahnschrift;
+}
+a{
+	text-decoration: none;
+	color: gold;
+}
+.contener{
+	background-color:;
+	width: 1000px;
+	margin-left: auto;
+	margin-right:1000px;
+}
+#content{
+	padding: 10px ;
+	
+
+
+}
+#nav{
+	width: 150px;
+	float: left;
+	text-align: left;
+
+}
+#nav h3 :hover{
+	font-weight:bold;
+	background-color: olive;
+	color:orangered;
+	border-radius: 20px;
+	font-size: 0px;
+	padding: 10px;
+}
+#nav ul{
+list-style-type: none;
+padding: 10px;
+}
+#nav .selected :hover{
+	font-weight:bold;
+	background-color: olive;
+	color:orangered;
+	border-radius: 8px;
+	font-size: 0px;
+	padding: 0px;
+}
+#main{
+	width: 600px;
+	float: right;
+	color: black;
+	display: inline
+}
+#leaders{
+font-weight:bold;
+	background-color: olive;
+	color:orangered;
+	border-radius: 120px;
+	font-size: 20px;
+	padding: 10px;	
+}
