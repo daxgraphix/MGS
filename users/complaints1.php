@@ -210,7 +210,7 @@ background-size:100% 100%;
       
     <div id="content">
       <div id="nav">
-        <a href="http://localhost/MGS/"><h3>REPORT</h3></a>
+        <a href="http://localhost/MGS/"><h3>MGS</h3></a>
          <ul>
         <div class ="selected">
           
@@ -273,11 +273,11 @@ window.onclick = function(event) {
 
       </div>
     
-    <div id="footer">
+ <!--   <div id="footer">
       copyright 2023 MGS.
     </div>
     </div>
-    
+    -->
 </div>  
 </div>
 </body>
