@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2022 at 06:53 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.5
+-- Generation Time: May 09, 2023 at 09:04 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `MGS`
+-- Database: `mgs`
 --
 
 -- --------------------------------------------------------
@@ -31,27 +31,19 @@ CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `division` varchar(255) NOT NULL,
   `subject` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `comment`
 --
 
 INSERT INTO `comment` (`id`, `division`, `subject`) VALUES
-(1, 'kisiju', 'mambo'),
-(2, 'mkuranga', 'wozaa'),
-(3, 'kisiju', 'nakubali'),
-(4, 'mkuranga', 'sdcedqwd23d'),
-(5, 'shungubweni', ''),
-(6, 'mkamba', 'fddss'),
-(7, 'kisiju', 'gfds'),
-(8, 'mkamba', 'fddsss'),
 (9, 'shungubweni', 'testing 1'),
-(10, 'shungubweni', 'dsfffds'),
 (11, 'kisiju', 'testing 3'),
-(12, 'mkuranga', 'wetuuu'),
-(13, 'kisiju', 'aa'),
-(14, 'mkamba', 'presentation');
+(14, 'mkamba', 'presentation'),
+(17, '', ''),
+(18, '', ''),
+(19, 'shungubweni', 'WATER POLUTION');
 
 -- --------------------------------------------------------
 
@@ -65,16 +57,14 @@ CREATE TABLE `complaintremark` (
   `status` varchar(255) NOT NULL,
   `remark` mediumtext NOT NULL,
   `remarkDate` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `complaintremark`
 --
 
 INSERT INTO `complaintremark` (`id`, `complaintNumber`, `status`, `remark`, `remarkDate`) VALUES
-(1, 12, 'in process', 'saw', '2022-07-07 11:34:35'),
-(2, 12, 'closed', 'hamna kitu', '2022-07-07 12:19:10'),
-(3, 19, 'closed', 'nilikosea', '2022-07-07 12:20:55');
+(3, 19, 'closed', 'nilikosea', '2023-05-09 18:08:32');
 
 -- --------------------------------------------------------
 
@@ -92,25 +82,18 @@ CREATE TABLE `complaints` (
   `regDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `status` varchar(50) NOT NULL,
   `lastUpdationDate` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `complaints`
 --
 
 INSERT INTO `complaints` (`complaintNumber`, `userid`, `usertype`, `division`, `ward`, `complaintDetails`, `regDate`, `status`, `lastUpdationDate`) VALUES
-(9, 4, 'ward', 0, 0, '', '2022-07-06 17:56:32', '', NULL),
-(10, 4, 'ward', 0, 0, '', '2022-07-06 17:56:50', '', NULL),
-(11, 4, 'ward', 0, 0, '', '2022-07-06 18:03:19', '', NULL),
-(12, 4, 'ward', 2, 0, 'oyyy', '2022-07-07 12:19:10', 'closed', NULL),
-(13, 4, 'ward', 0, 0, '', '2022-07-06 18:06:52', '', NULL),
-(14, 4, 'ward', 0, 0, '', '2022-07-06 18:08:15', '', NULL),
-(15, 4, 'ward', 0, 0, '', '2022-07-06 18:08:52', '', NULL),
-(16, 4, 'ward', 2, 0, 'hyaaaa', '2022-07-06 18:20:56', '', NULL),
-(17, 4, 'ward', 2, 2, 'uwjjshhjs', '2022-07-06 18:36:15', '', NULL),
-(19, 3, 'village', 3, 2, 'village mm', '2022-07-07 12:20:55', 'closed', NULL),
-(20, 4, 'ward', 4, 2, 'ward mm', '2022-07-06 18:50:33', '', NULL),
-(21, 5, 'division', 3, 2, 'division mm', '2022-07-06 18:51:18', '', NULL);
+(16, 4, 'ward', 2, 0, 'hyaaaa', '2023-05-09 18:08:30', '', NULL),
+(17, 4, 'ward', 2, 2, 'uwjjshhjs', '2023-05-09 18:08:31', '', NULL),
+(19, 3, 'village', 3, 2, 'village mm', '2023-05-09 18:08:32', 'closed', NULL),
+(20, 4, 'ward', 4, 2, 'ward mm', '2023-05-09 18:08:33', '', NULL),
+(21, 5, 'division', 3, 2, 'division mm', '2023-05-09 18:08:34', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -124,16 +107,16 @@ CREATE TABLE `division` (
   `divisionDescription` longtext NOT NULL,
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `updationDate` varchar(225) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `division`
 --
 
 INSERT INTO `division` (`id`, `divisionName`, `divisionDescription`, `creationDate`, `updationDate`) VALUES
-(1, 'mkuranga', '', '2022-07-06 18:01:31', ''),
-(3, 'mkamba', '', '2022-07-06 18:02:12', ''),
-(4, 'shungubweni', '', '2022-07-06 18:02:34', '');
+(1, 'Mkuranga', '', '2023-05-09 18:08:30', ''),
+(3, 'Mkamba', '', '2023-05-09 18:08:30', ''),
+(4, 'Shungubweni', '', '2023-05-09 18:08:31', '');
 
 -- --------------------------------------------------------
 
@@ -149,7 +132,7 @@ CREATE TABLE `user` (
   `usertype` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `status` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
@@ -174,15 +157,15 @@ CREATE TABLE `ward` (
   `ward` varchar(255) NOT NULL,
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `updationDate` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `ward`
 --
 
 INSERT INTO `ward` (`id`, `divisionid`, `ward`, `creationDate`, `updationDate`) VALUES
-(1, 1, 'kimanzichana', '2022-07-06 18:30:51', ''),
-(2, 1, 'mkamba', '2022-07-06 18:33:51', '');
+(1, 1, 'Kimanzichana', '2023-05-09 18:08:30', ''),
+(2, 1, 'Mkamba', '2023-05-09 18:08:30', '');
 
 --
 -- Indexes for dumped tables
@@ -236,7 +219,7 @@ ALTER TABLE `ward`
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `complaintremark`
