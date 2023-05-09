@@ -10,17 +10,19 @@ $division=$_POST['division'];
 $subject=$_POST['subject'];
 
 if (isset($_POST['submit'])) {
-
- $sql="INSERT INTO comment(id, division, subject) VALUES('$id','$division','$subject')";
- $sql1=mysqli_query($conn, $sql);
-  if ($sql1 > 0) {
-    $message1="<font>Successfully</font>";
-  }
-  else {
-    $message2="<font>Fail</font>";
+  if (!empty($_POST['subject'])) {
+    $sql="INSERT INTO comment(id, division, subject) VALUES('$id','$division','$subject')";
+    $sql1=mysqli_query($conn, $sql);
+    if ($sql1 > 0) {
+      $message1="<font>Successfully</font>";
+    } else {
+      $message2="<font>Fail</font>";
+    }
+  } else {
+    $message2="<font>The message cannot be empty</font>";
   }
 }
- ?>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -235,10 +237,10 @@ background-size:100% 100%;
     <div class="container">
       <label for="division">division </label>
     <select id="division" name="division">
-      <option value="shungubweni">shungubweni</option>
-      <option value="mkuranga">mkuranga</option>
-      <option value="kisiju">kisiju</option>
-      <option value="mkamba">mkamba</option>
+      <option value="shungubweni">Shungubweni</option>
+      <option value="mkuranga">Mkuranga</option>
+      <option value="kisiju">Kisiju</option>
+      <option value="mkamba">Mkamba</option>
     </select>
 
        <label for="subject">Subject</label>
