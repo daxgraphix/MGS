@@ -20,16 +20,17 @@
 
 
 <li>
-                <a class="collapsed" data-toggle="collapse" href="#togglePages">
-                 <i class="fa fa-book"></i> <i class="menu-icon icon-cog"></i> 
+               <a class="collapsed" data-toggle="collapse" href="#togglePages">
+                 <!-- <i class="fa fa-book"></i> <i class="menu-icon icon-cog"></i> 
                   <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i>
-                  Manage Complaint
+                  Manage Complaint-->
                 </a>
                 <ul id="togglePages" class="collapse unstyled">
                   <li>
-                    <a href="notprocess-complaint.php">
+                   <!-- <a href="notprocess-complaint.php">
                       <i class="icon-tasks"></i>
-                      Ward Officcer Comments
+                      Ward Officcer Comments-->
+                      
                       <?php
 //$rt = mysqli_query($bd, "SELECT * FROM complaints where status is null");
 //$num1 = mysqli_num_rows($rt);

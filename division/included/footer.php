@@ -1,7 +1,7 @@
-	<div class="footer">
+	<!--<div class="footer">
 		<div class="container">
 
 
-			<b class="copyright">copyright @copy;2022 Mchux.</b> All rights reserved.
+			<b class="copyright">copyright @MGS</b> All rights reserved.
 		</div>
 	</div>

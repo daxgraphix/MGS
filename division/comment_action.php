@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 
-$conn = mysqli_connect("localhost" , "root", "", "cms");
+$conn = mysqli_connect("localhost" , "root", "", "MGS");
 if ($conn === false) {
 	die("ERROR: could not connect." . mysqli_connect_error());
 }
@@ -12,7 +12,7 @@ $subject=$_REQUEST['subject'];
  $sql=  "insert into comment values('$id','$division','$subject')";
 if (mysqli_query($conn, $sql)) {
 	
-	echo "saccessfully";
+	echo "successfully";
 }
 else {
 	echo "fail";

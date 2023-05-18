@@ -101,8 +101,6 @@ while($row=mysqli_fetch_array($query))
 								</table>
 							</div>
 						</div>						
-
-						}
 						
 					</div><!--/.content-->
 				</div><!--/.span9-->

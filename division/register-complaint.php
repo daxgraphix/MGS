@@ -59,7 +59,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | User Register Complaint</title>
+    <title>MGS | User Register Complaint</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">

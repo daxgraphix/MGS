@@ -52,7 +52,7 @@ input[type=submit]:hover {
       
     <div id="content">
       <div id="nav">
-        <a href="http://localhost/Complaint Management System/"><h3> DASHBOARD</h3></a>
+        <a href="http://localhost/MGS/"><h3> DASHBOARD</h3></a>
          <ul>
         <div class ="selected">
 <!--<lebel for ="leaders">leaders categories:</lebel>
@@ -260,7 +260,7 @@ window.onclick = function(event) {
       </div>
     
     <div id="footer">
-      copyright @copy;2022 mchux.
+      copyright @2023 MGS.
     </div>
     </div>
     

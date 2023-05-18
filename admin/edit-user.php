@@ -80,7 +80,7 @@ $_SESSION['msg']="User Updated !!";
 $id=intval($_GET['id']);
 $query=mysqli_query($bd, "select * from user where id='$id'");
 while($row=mysqli_fetch_array($query))
-{
+
 ?>									
 <div class="control-group">
 <label class="control-label" for="basicinput">User name</label>
@@ -167,4 +167,5 @@ while($row=mysqli_fetch_array($query))
 		} );
 	</script>
 </body>
-<?php// } ?>
+<?php// } 
+?>

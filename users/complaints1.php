@@ -114,7 +114,7 @@ button:hover {
 }
 
 img.avatar {
-  width: 40%;
+  width: 15%;
   border-radius: 50%;
 }
 
@@ -212,7 +212,7 @@ background-size:100% 100%;
       
     <div id="content">
       <div id="nav">
-        <a href="http://localhost/MGS/"><h3>MGS</h3></a>
+        <a href="http://localhost/MGS/"><h3>HOME</h3></a>
          <ul>
         <div class ="selected">
           
