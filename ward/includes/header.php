@@ -3,7 +3,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>MKURANGA DISTRICT GRIEVANCE SYSTEM</b>
+            <a href="index.html" class="logo"><b>MKURANGA GRIEVANCE SYSTEM</b>
              <br><i>Welcome Ward Chairperson</i></br></a>
                 
             <div class="top-menu">

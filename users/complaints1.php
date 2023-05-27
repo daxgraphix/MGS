@@ -204,7 +204,7 @@ background-size:100% 100%;
   <link rel="stylesheet" type="text/css" href="nyumbani.css">
 
 <body  background="c10.jpg" class="body_deg">
-<h1 align="center">WELCOME MKURANGA DISTRICT COMPLAINT SYSTEM </h1>
+<h1 align="center">WELCOME MKURANGA GRIEVANCE SYSTEM</h1>
 <h2 align="center"></h2>
 <hr>
     

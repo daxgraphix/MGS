@@ -44,7 +44,7 @@ input[type=submit]:hover {
   <link rel="stylesheet" type="text/css" href="nyumbani.css">
 </head>
 </li>
-<h1 align="center">WELCOME MKURANGA DISTRICT GRIEVANCE SYSTEM </h1>
+<h1 align="center">WELCOME MKURANGA GRIEVANCE SYSTEM </h1>
 <h2 align="center"></h2>
 <hr>
     
