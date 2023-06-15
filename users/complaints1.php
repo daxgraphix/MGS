@@ -14,12 +14,12 @@ if (isset($_POST['submit'])) {
     $sql="INSERT INTO comment(id, division, subject) VALUES('$id','$division','$subject')";
     $sql1=mysqli_query($conn, $sql);
     if ($sql1 > 0) {
-      $message1="<font>Successfully</font>";
+      $message1="<font>Ujumbe Umepokelewa</font>";
     } else {
-      $message2="<font>Fail</font>";
+      $message2="<font>Ujumbe Haujapokelewa</font>";
     }
   } else {
-    $message2="<font>The message cannot be empty</font>";
+    $message2="<font>UJUMBE HAUTAKIWI KUWA WAZI</font>";
   }
 }
 ?>
@@ -204,7 +204,7 @@ background-size:100% 100%;
   <link rel="stylesheet" type="text/css" href="nyumbani.css">
 
 <body  background="c10.jpg" class="body_deg">
-<h1 align="center">WELCOME MKURANGA GRIEVANCE SYSTEM</h1>
+<h1 align="center">KARIBU KUTOA MAONI NA USHAURI WILAYA YA MKURANGA</h1>
 <h2 align="center"></h2>
 <hr>
     
@@ -222,9 +222,9 @@ background-size:100% 100%;
  <div><?php echo $message1; ?></div>
       <div><?php echo $message2; ?></div>
 
-<CENTER><h3>CLICK DOWN TO WRITE AND SUBMIT YOUR COMMENT AND OPINIONS</h3>
+<CENTER><h3>BONYEZA HAPA CHINI KUANDIKA UJUMBE WAKO</h3>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">COMMENT & OPINION</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">TUMA MAONI YAKO</button>
 </CENTER>
 
 <div id="id01" class="modal">
@@ -235,7 +235,7 @@ background-size:100% 100%;
     </div>
 
     <div class="container">
-      <label for="division">division </label>
+      <label for="division">CHAGUA TARAFA YAKO</label>
     <select id="division" name="division">
       <option value="shungubweni">Shungubweni</option>
       <option value="mkuranga">Mkuranga</option>
@@ -243,17 +243,17 @@ background-size:100% 100%;
       <option value="mkamba">Mkamba</option>
     </select>
 
-       <label for="subject">Subject</label>
+       <label for="subject">UJUMBE</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
-      <input type="submit" name="submit" value="Submit" />
+      <input type="submit" name="submit" value="TUMA" />
      <!-- <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>-->
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">SITISHA</button>
     </div>
   </form>
 </div>
