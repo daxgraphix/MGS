@@ -33,7 +33,7 @@ body{
 }
 a{
 	text-decoration: none;
-	color: gold;
+	color: black;
 }
 .contener{
 	background-color:;
@@ -48,6 +48,7 @@ a{
 
 }
 #nav{
+	background-color: black;
 	width: 150px;
 	float: left;
 	text-align: left;
@@ -55,7 +56,7 @@ a{
 }
 #nav h3 :hover{
 	font-weight:bold;
-	background-color: olive;
+	background-color: black;
 	color:orangered;
 	border-radius: 20px;
 	font-size: 0px;

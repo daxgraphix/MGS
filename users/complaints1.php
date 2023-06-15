@@ -81,7 +81,7 @@ input[type=text], input[type=password] {
 }
 a{
   text-decoration: none;
-  color: gold;
+  color: black;
 }
 
 /* Set a style for all buttons */
